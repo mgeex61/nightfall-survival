@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nightfall Survival</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-shell">
+    <div class="game-card">
+      <div class="top-bar">
+        <div class="title-wrap">
+          <p class="eyebrow">Top-Down Survival</p>
+          <h1>Nightfall Survival</h1>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <span class="stat-label">Day</span>
+            <span class="stat-value" id="dayText">1</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Time</span>
+            <span class="stat-value" id="timeText">08:00</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Zone</span>
+            <span class="stat-value" id="zoneText">Outside</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Status</span>
+            <span class="stat-value" id="statusText">Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls-info">
+        <span>WASD = Move</span>
+        <span>Mouse = Aim</span>
+        <span>Click = Shoot</span>
+        <span>F = Enter / Exit / Floors</span>
+        <span>E = Eat / Barricade</span>
+        <span>X = Remove barricade</span>
+        <span>Q = Melee</span>
+        <span>1 = Pistol</span>
+        <span>2 = Shotgun</span>
+        <span>I = Inventory</span>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+        <div class="overlay" id="startOverlay">
+          <div class="overlay-card">
+            <h2>Nightfall Survival</h2>
+            <p>
+              Explore a larger map, enter houses, survive the night, barricade windows and doors,
+              and fight with a pistol or shotgun.
+            </p>
+            <button id="startBtn">Start Game</button>
+          </div>
+        </div>
+
+        <div class="overlay hidden" id="endOverlay">
+          <div class="overlay-card">
+            <h2 id="endTitle">Game Over</h2>
+            <p id="endText">You did not survive.</p>
+            <button id="restartBtn">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
