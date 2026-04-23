@@ -46,9 +46,7 @@ Use food to manage hunger, gather wood to barricade doors and windows, and switc
 
 ## Live Demo
 
-Add your GitHub Pages link here after publishing:
-
-`https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/`
+https://mgeex61.github.io/nightfall-survival/
 
 ## Author
 
